@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- ============== font Awsome =============-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+    <link rel="icon" href="assets/img/title-icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&family=Open+Sans:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Work+Sans:wght@200;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>(+01) - 2978 - 8172</span>
+            <span>Our Location</span>
+          </div>
+          <p class="header-alert-news">
+            Super Value Deals - Save More With Coupons
+          </p>
+          <a href="login-register.html" class="header-top-action"
+            >Log-in/Sign-in</a
+          >
+        </div>
+      </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="assets/img/logo.svg"
+            alt="Website Logo"
+            class="nav-logo-img"
+          />
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link active-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">My Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+          <div class="header-search">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Search For Items"
+            />
+            <button class="search-button">
+              <img src="assets/img/search.png" alt="search img png" />
+            </button>
+          </div>
+        </div>
+        <div class="header-user-action">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="assets/img/icon-heart.svg" alt="Heart Icon" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header-action-btn">
+            <img src="assets/img/icon-cart.svg" alt="Heart Icon" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== Main ===============-->
+    <main class="main">
+      <!--=============== Breadcrumb ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list flex container">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Shop</span></li>
+        </ul>
+      </section>
+
+      <!--=============== Products ===============-->
+      <section class="products section-lg container">
+        <p class="total-products">We Found <span>79</span> Items For You</p>
+
+        <div class="products-container grid">
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-1-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-1-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-pink">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$45.50</span>
+                <span class="old-price">$60</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-2-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-2-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$47.50</span>
+                <span class="old-price">$60</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-3-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-3-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-orange">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Sport Shoe</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$74.99</span>
+                <span class="old-price">$100</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-4-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-4-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-blue">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Jumpsuit</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$39.99</span>
+                <span class="old-price">$50</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-5-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-5-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-blue">-20%</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Hats</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$20</span>
+                <span class="old-price">$25</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-6-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-6-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-blue">-28.57%</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$50</span>
+                <span class="old-price">$70</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-7-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-7-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$50</span>
+                <span class="old-price">$70</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-8-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-8-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$60</span>
+                <span class="old-price">$65</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-13-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-13-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Bag</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$55</span>
+                <span class="old-price">$60</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-2-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-2-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$47.50</span>
+                <span class="old-price">$60</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-10-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-10-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Sandals</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$34.50</span>
+                <span class="old-price">$45</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-images">
+                <img
+                  src="assets/img/product-4-1.jpg"
+                  class="product-img default"
+                  alt="Product Img"
+                />
+                <img
+                  src="assets/img/product-4-2.jpg"
+                  class="product-img hover"
+                  alt="Product Img"
+                />
+              </a>
+              <div class="product-actions">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="fa-solid fa-shuffle"></i>
+                </a>
+              </div>
+              <div class="product-badge light-blue">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Jumpsuit</h3>
+              </a>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price flex">
+                <span class="new-price">$39.99</span>
+                <span class="old-price">$50</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="pagination">
+          <li><a href="#" class="pagination-link active">01</a></li>
+          <li><a href="#" class="pagination-link">02</a></li>
+          <li><a href="#" class="pagination-link">03</a></li>
+          <li><a href="#" class="pagination-link">....</a></li>
+          <li><a href="#" class="pagination-link">13</a></li>
+          <li>
+            <a href="#" class="pagination-link icon">
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!--=============== Newslleter ===============-->
+      <section class="newsletter section">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img
+              class="newsletter-icon"
+              src="assets/img/icon-email.svg"
+              alt="Newsletter Icon"
+            />
+            Sign Up To Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...And Reseive $25 Coupon For First Shopping
+          </p>
+          <form action="" class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Enter Your Email"
+            />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== Footer ===============-->
+    <footer class="footer container">
+      <div class="footer-container grid">
+        <div class="footer-content">
+          <a href="index.html" class="footer-logo">
+            <img
+              class="footer-logo-img"
+              src="assets/img/logo.svg"
+              alt="Main Logo"
+            />
+          </a>
+          <h4 class="footer-subtitle">Contact</h4>
+          <p class="footer-description">
+            <span>Address: </span>562 Wellington Road, Street 32, San FranCisco
+          </p>
+          <p class="footer-description">
+            <span>Phone: </span> (+01) - 2978 - 8172 / (+212) - 2999 - 8672
+          </p>
+          <p class="footer-description">
+            <span>Hours: </span>10:00AM - 18:00PM / Mon - Sat
+          </p>
+          <div class="footer-social">
+            <h4 class="footer-subtitle">Follow Me On:</h4>
+            <div class="footer-social-links flex">
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-facebook.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-twitter.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-instagram.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-pinterest.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-youtube.svg"
+                  alt="Social Icons"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Address</h3>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">About Us</a></li>
+            <li><a href="" class="footer-link">Deliveri Information</a></li>
+            <li><a href="" class="footer-link">Privacy Policy</a></li>
+            <li><a href="" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="" class="footer-link">Contact Us</a></li>
+            <li><a href="" class="footer-link">Support Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">My Account</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="login-register.html" class="footer-link">Sign In</a>
+            </li>
+            <li><a href="" class="footer-link">View</a></li>
+            <li><a href="wishlist.html" class="footer-link">My Wishlist</a></li>
+            <li><a href="" class="footer-link">Track My Order</a></li>
+            <li><a href="" class="footer-link">Help</a></li>
+            <li><a href="" class="footer-link">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Secured Payment Gateways</h3>
+          <img
+            src="assets/img/payment-method.png"
+            alt="Payment Methods"
+            class="payment-img"
+          />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Evara. All Right Reserved</p>
+        <span class="programmer">Recoded By Adam Mtk</span>
+      </div>
+    </footer>
+    <span class="scroll-to-top"></span>
+    <!--=============== Swiper JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--=============== Main JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

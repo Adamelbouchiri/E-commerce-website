@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- ============== font Awsome =============-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+    <link rel="icon" href="assets/img/title-icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&family=Open+Sans:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Work+Sans:wght@200;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>(+01) - 2978 - 8172</span>
+            <span>Our Location</span>
+          </div>
+          <p class="header-alert-news">
+            Super Value Deals - Save More With Coupons
+          </p>
+          <a href="login-register.html" class="header-top-action"
+            >Log-in/Sign-in</a
+          >
+        </div>
+      </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="assets/img/logo.svg"
+            alt="Website Logo"
+            class="nav-logo-img"
+          />
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link active-link"
+                >My Account</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+          <div class="header-search">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Search For Items"
+            />
+            <button class="search-button">
+              <img src="assets/img/search.png" alt="search img png" />
+            </button>
+          </div>
+        </div>
+        <div class="header-user-action">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="assets/img/icon-heart.svg" alt="Heart Icon" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header-action-btn">
+            <img src="assets/img/icon-cart.svg" alt="Heart Icon" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== Main ===============-->
+    <main class="main">
+      <!--=============== Breadcrumb ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list flex container">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Account</span></li>
+        </ul>
+      </section>
+
+      <!--=============== Accounts ===============-->
+      <section class="accounts section-lg">
+        <div class="accounts-container container grid">
+          <div class="account-tabs">
+            <p class="account-tab active-tab" data-target="#dashboard">
+              <i class="fa-solid fa-gear"></i> Dashboard
+            </p>
+            <p class="account-tab" data-target="#order">
+              <i class="fa-solid fa-shopping-bag"></i> Orders
+            </p>
+            <p class="account-tab" data-target="#update-profile">
+              <i class="fa-solid fa-user"></i> Update Profile
+            </p>
+            <p class="account-tab" data-target="#address">
+              <i class="fa-solid fa-marker"></i> Address
+            </p>
+            <p class="account-tab" data-target="#change-password">
+              <i class="fa-solid fa-lock"></i> Change Password
+            </p>
+            <p class="account-tab">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+            </p>
+          </div>
+
+          <div class="tabs-content">
+            <div class="tab-content active-tab" content id="dashboard">
+              <h3 class="tab-header">Hello Costumer</h3>
+              <div class="tab-body">
+                <p class="tab-description">
+                  From Your Account Dashboard, You Can Easily Check & View Your
+                  Recent Orders, Manage Your Shipping And Billing Addresses And
+                  Change Your Password and Account Details.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="order">
+              <h3 class="tab-header">Your Orders</h3>
+              <div class="tab-body">
+                <table class="placed-order-table">
+                  <tr>
+                    <th>Orders</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                  </tr>
+                  <tr>
+                    <td>#917</td>
+                    <td>May, 1 2023</td>
+                    <td>Processing</td>
+                    <td>$170.00</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>#1297</td>
+                    <td>March, 25 2023</td>
+                    <td>completed</td>
+                    <td>$125.00</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>#2344</td>
+                    <td>January, 03 2023</td>
+                    <td>Completed</td>
+                    <td>$90.00</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="update-profile">
+              <h3 class="tab-header">Update Profile</h3>
+              <div class="tab-body">
+                <form action="" class="form grid">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-input"
+                  />
+                  <div class="form-btn">
+                    <button class="btn">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="address">
+              <h3 class="tab-header">Shipping Address</h3>
+              <div class="tab-body">
+                <address class="address">
+                  3511 Interstate,<br />
+                  75 Businnes Spur,<br />
+                  Sault Ste. Marie, MI 673320.<br />
+                </address>
+                <p class="city">New York</p>
+                <a href="" class="edit">Edit</a>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="change-password">
+              <h3 class="tab-header">Change Password</h3>
+              <div class="tab-body">
+                <form action="" class="form grid">
+                  <input
+                    type="password"
+                    placeholder="Current Password"
+                    class="form-input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="New Password"
+                    class="form-input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Confirm New Password"
+                    class="form-input"
+                  />
+                  <div class="form-btn">
+                    <button class="btn">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Newsletter ===============-->
+      <section class="newsletter section">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img
+              class="newsletter-icon"
+              src="assets/img/icon-email.svg"
+              alt="Newsletter Icon"
+            />
+            Sign Up To Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...And Reseive $25 Coupon For First Shopping
+          </p>
+          <form action="" class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Enter Your Email"
+            />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== Footer ===============-->
+    <footer class="footer container">
+      <div class="footer-container grid">
+        <div class="footer-content">
+          <a href="index.html" class="footer-logo">
+            <img
+              class="footer-logo-img"
+              src="assets/img/logo.svg"
+              alt="Main Logo"
+            />
+          </a>
+          <h4 class="footer-subtitle">Contact</h4>
+          <p class="footer-description">
+            <span>Address: </span>562 Wellington Road, Street 32, San FranCisco
+          </p>
+          <p class="footer-description">
+            <span>Phone: </span> (+01) - 2978 - 8172 / (+212) - 2999 - 8672
+          </p>
+          <p class="footer-description">
+            <span>Hours: </span>10:00AM - 18:00PM / Mon - Sat
+          </p>
+          <div class="footer-social">
+            <h4 class="footer-subtitle">Follow Me On:</h4>
+            <div class="footer-social-links flex">
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-facebook.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-twitter.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-instagram.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-pinterest.svg"
+                  alt="Social Icons"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer-social-icon"
+                  src="assets/img/icon-youtube.svg"
+                  alt="Social Icons"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Address</h3>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">About Us</a></li>
+            <li><a href="" class="footer-link">Deliveri Information</a></li>
+            <li><a href="" class="footer-link">Privacy Policy</a></li>
+            <li><a href="" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="" class="footer-link">Contact Us</a></li>
+            <li><a href="" class="footer-link">Support Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">My Account</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="login-register.html" class="footer-link">Sign In</a>
+            </li>
+            <li><a href="" class="footer-link">View</a></li>
+            <li><a href="wishlist.html" class="footer-link">My Wishlist</a></li>
+            <li><a href="" class="footer-link">Track My Order</a></li>
+            <li><a href="" class="footer-link">Help</a></li>
+            <li><a href="" class="footer-link">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Secured Payment Gateways</h3>
+          <img
+            src="assets/img/payment-method.png"
+            alt="Payment Methods"
+            class="payment-img"
+          />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Evara. All Right Reserved</p>
+        <span class="programmer">Recoded By Adam Mtk</span>
+      </div>
+    </footer>
+    <span class="scroll-to-top"></span>
+    <!--=============== Swiper JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--=============== Main JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
